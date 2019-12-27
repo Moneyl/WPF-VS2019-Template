@@ -1,0 +1,1 @@
+WPF VS Theme Template
