@@ -85,6 +85,8 @@ namespace OGMM.ViewModels
             WindowLogger.Log($"Set game folder to \"{gameFolderPath}\"");
 
             _modManager.ScanModsFolder(gameFolderPath + @"\mods\");
+            _modManager.DataFolderPath = gameFolderPath + @"\data\"; //Todo: Let mod and game folders be in separate locations
+
             SelectedIndex = 0;
             UpdateModList();
         }
